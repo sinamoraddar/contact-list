@@ -1,6 +1,6 @@
 
 # Contact list
-a React web app using the http://randomuser.me/ api to generate random contact
+a React web app using the http://randomuser.me/ api to generate random contacts
 
 ## Tech Stack
 * HTML
