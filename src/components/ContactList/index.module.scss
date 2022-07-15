@@ -2,8 +2,12 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+  max-width: 90%;
   * > {
     width: 100%;
+  }
+  h1 {
+    text-align: center;
   }
 }
 .ContactList__Tabs {
@@ -23,62 +27,17 @@
   background: #80808040;
   border-radius: 0 0 10px 10px;
   padding: 24px 32px;
+
+  @media screen and (max-width: 959px) {
+    grid-template-columns: auto;
+  }
 }
 
 .ContactList__ListItem {
   border-bottom: 1px dotted black;
   padding: 8px 16px;
   cursor: pointer;
-}
-
-.ContactList__Card {
-  position: relative;
-  cursor: initial;
-  padding: 24px;
-  margin: 8px 0;
-  display: flex;
-  border: 1px solid gray;
-  border-radius: 5px;
-  img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-right: 24px;
+  > div span {
+    text-transform: uppercase;
   }
-  h4 {
-    color: gray;
-    font-size: 1.2em;
-    margin-top: 0;
-  }
-  p {
-    display: grid;
-    grid-template-columns: 40% auto;
-    span {
-      font-weight: bold;
-    }
-  }
-}
-
-.ContactList__CloseButton {
-  position: absolute;
-  background: none;
-  border: none;
-  left: 8px;
-  top: 8px;
-  font-size: 1.5em;
-  color: gray;
-}
-
-.ContactList__Username {
-  position: absolute;
-  top: -8px;
-  right: 8px;
-  background: red;
-  height: 90%;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 8px;
 }

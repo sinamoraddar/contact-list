@@ -1,0 +1,62 @@
+.ContactList__Card {
+  position: relative;
+  cursor: initial;
+  padding: 24px 45px 24px 24px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+  }
+  h4 {
+    color: gray;
+    font-size: 1.2em;
+    margin-top: 0;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  p {
+    display: grid;
+    grid-template-columns: 40% auto;
+
+    @media screen and (max-width: 959px) {
+      grid-template-columns: auto;
+      grid-gap: 8px;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.ContactList__CloseButton {
+  position: absolute;
+  background: none;
+  border: none;
+  left: 8px;
+  top: 8px;
+  font-size: 1.5em;
+  color: gray;
+  cursor: pointer;
+}
+
+.ContactList__Username {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  background: red;
+  height: 90%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
