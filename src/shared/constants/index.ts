@@ -30,7 +30,7 @@ export const initialContactGroups: ContactGroupsShape = {
   z: []
 };
 
-export enum nations {
+export enum Nations {
   AU = 'AU',
   BR = 'BR',
   CA = 'CA',
@@ -88,7 +88,7 @@ export interface ContactShape {
     sha256: string;
   };
   name: { title: string; first: string; last: string };
-  nat: nations;
+  nat: Nations;
   phone: string;
   picture: {
     large: string;

@@ -1,9 +1,5 @@
 import { baseUrl } from './config';
+import { Nations } from '../shared/constants';
 
-export const fetchRandomContactsMethod = ({
-  results = 100,
-  nat = 'gb'
-}: {
-  results?: number;
-  nat?: string;
-}) => fetch(`${baseUrl}?results=${results}&&nat=${nat}`).then((response) => response.json());
+export const fetchRandomContactsMethod = ({ results, nat }: { results: number; nat: Nations }) =>
+  fetch(`${baseUrl}?results=${results}&&nat=${nat}`).then((response) => response.json());

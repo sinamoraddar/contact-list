@@ -5,7 +5,7 @@ import {
   ContactGroupsShape,
   ContactShape,
   initialContactGroups,
-  nations
+  Nations
 } from '../../shared/constants';
 import { fetchRandomContactsMethod } from '../../api/methods';
 import Loading from '../Loading';
@@ -26,7 +26,7 @@ const ContactList = () => {
   }, []);
 
   const fetchContacts = useCallback(() => {
-    fetchRandomContactsMethod({ results: 200, nat: nations.GB })
+    fetchRandomContactsMethod({ results: 200, nat: Nations.GB })
       .then((data) => {
         setContactGroups(initialContactGroups);
         setContactList(data?.results);

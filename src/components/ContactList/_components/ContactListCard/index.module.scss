@@ -1,17 +1,19 @@
+@import 'src/shared/styles/shared';
+
 .ContactList__Card {
   position: relative;
   cursor: initial;
-  padding: 24px 45px 24px 24px;
-  margin: 8px 0;
+  padding: $baseSpacing * 3 45px $baseSpacing * 3 $baseSpacing * 3;
+  margin: $baseSpacing 0;
   display: flex;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: $baseBorderRadius;
   flex-wrap: wrap;
   img {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    margin-right: 24px;
+    margin-right: $baseSpacing * 3;
   }
   h4 {
     color: gray;
@@ -25,9 +27,9 @@
     display: grid;
     grid-template-columns: 40% auto;
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $desktopBreakPoint) {
       grid-template-columns: auto;
-      grid-gap: 8px;
+      grid-gap: $baseSpacing;
     }
     span {
       font-weight: bold;
@@ -39,8 +41,8 @@
   position: absolute;
   background: none;
   border: none;
-  left: 8px;
-  top: 8px;
+  left: $baseSpacing;
+  top: $baseSpacing;
   font-size: 1.5em;
   color: gray;
   cursor: pointer;
@@ -48,8 +50,8 @@
 
 .ContactList__Username {
   position: absolute;
-  top: -8px;
-  right: 8px;
+  top: -$baseSpacing;
+  right: $baseSpacing;
   background: red;
   height: 90%;
   writing-mode: vertical-rl;
@@ -57,6 +59,6 @@
   display: flex;
   align-items: center;
   color: white;
-  padding: 8px;
-  border-radius: 5px;
+  padding: $baseSpacing;
+  border-radius: $baseBorderRadius;
 }

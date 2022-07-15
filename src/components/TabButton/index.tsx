@@ -11,16 +11,14 @@ const TabButton = ({
   word: string;
   count: number;
   selected?: boolean;
-}) => {
-  return (
-    <button
-      disabled={count === 0}
-      className={`${classes.TabButton} ${selected ? classes['TabButton--Selected'] : ''}`}
-      onClick={handleTab.bind(null, word)}>
-      {word}
-      <span className={classes.TabButton__Count}>{count}</span>
-    </button>
-  );
-};
+}) => (
+  <button
+    disabled={count === 0}
+    className={`${classes.TabButton} ${selected ? classes['TabButton--Selected'] : ''}`}
+    onClick={handleTab.bind(null, word)}>
+    {word}
+    <span className={classes.TabButton__Count}>{count}</span>
+  </button>
+);
 
 export default TabButton;
