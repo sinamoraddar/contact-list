@@ -7,10 +7,12 @@ a React web app using the http://randomuser.me/ api to generate random contacts
 * CSS
     * SCSS modules
     * Grid & FlexBox
-    * **no css framework was used**
+    * **No CSS framework was used**
 * Typescript
 * Reactjs(Hooks,...)
-
+* Unit testing
+   * Jest
+   * React testing library
 # My Solution
 [https://sinamoraddar.github.io/contact-list/](https://sinamoraddar.github.io/contact-list/)
 
