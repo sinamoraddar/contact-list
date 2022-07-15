@@ -1,4 +1,6 @@
-.List__Item{
-  border: 1px solid black;
-  cursor: pointer;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
 }

@@ -1,0 +1,23 @@
+.TabButton {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  padding: 23px;
+  border-color: #80808038;
+  background: #80808040;
+  font-size: 20px;
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.TabButton__Count {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 0.55em;
+}
+
+.TabButton--Selected {
+  border-bottom: none;
+  border-color: #00000069;
+}
